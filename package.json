@@ -19,6 +19,16 @@
   "dependencies": {
     "angular2": "^2.0.0-alpha.26",
     "bower": "^1.4.1",
+    "browser-sync": "^2.7.10",
+    "express": "^4.12.4",
+    "gulp": "^3.9.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-typescript": "^2.7.6",
     "http-server": "^0.8.0"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.0",
+    "gulp-sass": "^2.0.1"
   }
 }

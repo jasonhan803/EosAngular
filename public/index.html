@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EOS Control Interface</title>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="/style/main.css" media="screen" title="main" charset="utf-8">
+    <meta name="viewport" content="initial-scale=1" />
+
+  </head>
+  <body layout="column" ng-app="eos">
+
+    <md-toolbar layout="row" layout-align="center center">
+      <div class="md-toolbar-tools">
+        <md-button ng-click="toggleSidenav('left')" hide-gt-sm class="md-icon-button">
+          <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
+        </md-button>
+        <h1>EOS</h1>
+      </div>
+
+      <md-switch
+        aria-label="Turn on/off"
+        ng-model="vm.on"> {{vm.on ? 'on': 'off'}}
+      </md-switch>
+    </md-toolbar>
+
+    <md-sidenav>
+    </md-sidenav>
+
+    <md-content layout="column" ng-controller="MainCtrl as vm">
+      <h1>EOS Control Panel</h1>
+      <p>
+        Here will be the super duper EOS interface and some more!
+      </p>
+      <p>
+        {{vm.hello}}
+
+      </p>
+      <md-button class="md-raised md-primary">hello world</md-button>
+    </md-content>
+
+
+
+
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-aria.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+
+    <!-- own scripts, should minify -->
+    <script src="/script/eos/app.js" charset="utf-8"></script>
+  </body>
+</html>
