@@ -1,0 +1,10 @@
+[
+  {
+    "id": "toggle",
+    "title": "turn light on/off"
+  },
+  {
+    "id": "status",
+    "title": "get status"
+  }
+]
